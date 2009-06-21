@@ -4,12 +4,10 @@
   <!-- Inherit the core Web Toolkit stuff.                        -->
   <inherits name='com.google.gwt.user.User'/>
   
-  <inherits name='com.google.gwt.gears.Gears'/>
-  <inherits name='com.google.gwt.ajaxloader.AjaxLoader'/>
   <inherits name='com.google.gwt.maps.GoogleMaps'/>
-  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true_or_false&amp;key=ABQIAAAAhz6w4o8Dnx4MWEXjy_RcIRRyJhidimuyiD6wWJvAZS9_-Fun-BRA8GoYY4alwdSD-vASZEddXXaDDg" />
+  <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;sensor=true&amp;key=ABQIAAAAhz6w4o8Dnx4MWEXjy_RcIRRyJhidimuyiD6wWJvAZS9_-Fun-BRA8GoYY4alwdSD-vASZEddXXaDDg" />
   
-  --><!-- Inherit the default GWT style sheet.  You can change       -->
+  <!-- Inherit the default GWT style sheet.  You can change       -->
   <!-- the theme of your GWT application by uncommenting          -->
   <!-- any one of the following lines.                            -->
   <inherits name='com.google.gwt.user.theme.standard.Standard'/>
@@ -21,9 +19,4 @@
   <!-- Specify the app entry point class.                         -->
   <entry-point class='org.thomasamsler.glm.client.Glm'/>
   
-  <!-- Rebind the entry point if Gears is not installed -->
-  <replace-with class="org.thomasamsler.glm.client.NoGears">
-    <when-type-is class="org.thomasamsler.glm.client.Glm"/>
-    <when-property-is name="gears.installed" value="false"/>
-  </replace-with>
 </module>
